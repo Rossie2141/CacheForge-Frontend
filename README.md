@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# CacheForge Frontend ⚡
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **CacheForge frontend** is the web dashboard for managing and interacting with your cache system.
 
-## Available Scripts
+Built with:
 
-In the project directory, you can run:
+- ⚛️ **React**
+- 🎨 **Tailwind CSS**
+- 🧩 **shadcn/ui components**
 
-### `npm start`
+The frontend provides a clean interface to monitor cache performance, manage keys, execute Redis-style commands, and interact with real-time messaging features.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+The dashboard contains five main sections:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📊 Overview
 
-### `npm run build`
+A real-time monitoring dashboard showing:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Total keys
+- Memory usage
+- Cache hit rate
+- Operations per second
+- Live performance metrics
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔑 Key Browser
 
-### `npm run eject`
+Manage your cache keys through an easy-to-use interface.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Capabilities:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Search keys
+- View key values
+- Create new keys
+- Edit existing keys
+- Delete keys
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 💻 CLI Terminal
 
-## Learn More
+A browser-based Redis-style terminal.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Examples:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+SET username shriprasad
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GET username
